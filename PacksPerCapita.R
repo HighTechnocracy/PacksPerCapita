@@ -9,6 +9,6 @@ data$YEAR <- as.Date(data$YEAR, "%Y")
 pdf(file = "~/R/PacksPerCapita/Visuals/ppc.pdf")
 ggplot(data, aes(data$YEAR, data$PPC)) + geom_line() + 
         xlab("calendar year") + ylab("packs per year") +
-        stat_smooth(colour="green")
+        stat_smooth(colour="blue")
 
 dev.off()
